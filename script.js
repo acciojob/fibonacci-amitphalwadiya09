@@ -1,16 +1,17 @@
 function fibonacci(num) {
-// your code here
-	let a=0;
-	let b=1;
-	let sum=0;
-	for(let i=0;i<num-2;i++)
-		{
-			c=a+b;
-			sum=sum+c;
-			a=b;
-			b=c;
-			
-		}
+	if(num==1)
+	{
+		return 0;
+	}
+	else if(num==2)
+	{
+		return 1;
+	}
+	else {
+		return fibonacci(num-1)+fibonacci(num-2)
+	}
+	
+	
 }
 
 module.exports = fibonacci;
