@@ -1,6 +1,6 @@
 function fibonacci(num) {
 	let a=0,b=1;
-	let i=3;
+	let i=2;
 	while(num>=i)
 		{
 			let c=a+b;
